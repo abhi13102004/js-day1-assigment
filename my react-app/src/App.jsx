@@ -4,32 +4,29 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const name ="Demo";
+  var x=30;
+  var y=45;
+  function fun(){
+    return "Inside function";
+  }
+  function sum(a,b)
+  {
+    return a+b;
+  }
+     return (
+    <div>
+     <h1>jsx with curly braces</h1>
+     <h2>use variable with jsx</h2>
+     <h2>sum of two numbers: {x + y}</h2>
+     <h2>Example of variable in demo</h2>
+     <h2>use function with jsx</h2>
+     <h3>{fun()}</h3>
+     <h3>Example of parameterized function: {sum(10, 20)}</h3>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-        <h1>This is example of React project</h1>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      
+   
+    </div>
   )
 }
 
